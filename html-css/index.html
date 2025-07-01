@@ -5,11 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>総復習の課題</title>
     <meta name="description" content="総復習の課題用のサイトです。">
-    <link rel="stylesheet" href="./sanitize.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div id="layout-gird">
+        <h2 class="grid-title">横4 × 縦4</h2>
+        <div class="grid-area">
+            <ul class="grid grid-col-4">
+                <li class="grid-item first-col">01</li>
+                <li class="grid-item">02</li>
+                <li class="grid-item">03</li>
+                <li class="grid-item">04</li>
+            </ul>
+            <ul class="grid grid-col-4">
+                <li class="grid-item first-col">05</li>
+                <li class="grid-item">06</li>
+                <li class="grid-item">07</li>
+                <li class="grid-item">08</li>
+            </ul>
+            <ul class="grid grid-col-4">
+                <li class="grid-item first-col">09</li>
+                <li class="grid-item">10</li>
+                <li class="grid-item">11</li>
+                <li class="grid-item">12</li>
+            </ul>
+            <ul class="grid grid-col-4 last-row">
+                <li class="grid-item first-col">13</li>
+                <li class="grid-item">14</li>
+                <li class="grid-item">15</li>
+                <li class="grid-item">16</li>
+            </ul>
+        </div>
+        <h2  class="grid-title">横2 × 縦2</h2>
+        <div class="grid-area">
+            <ul class="grid grid-col-2">
+                <li class="grid-item first-col">01</li>
+                <li class="grid-item">02</li>
+            </ul>
+            <ul class="grid grid-col-2 last-row">
+                <li class="grid-item first-col">03</li>
+                <li class="grid-item">04</li>
+            </ul>
+        </div>
+        <h2 class="grid-title">横6 × 縦1</h2>
+        <div class="grid-area">
+            <ul class="grid grid-col-4 last-row">
+                <li class="grid-item first-col">01</li>
+                <li class="grid-item">02</li>
+                <li class="grid-item">03</li>
+                <li class="grid-item">04</li>
+                <li class="grid-item">05</li>
+                <li class="grid-item">06</li>
+            </ul>
+        </div>
+    </div>
 
-    <script src="../database/script.js"></script>
+    <div id="layout-form">
+        <h2 class="form-title">Sign in to your account</h2>
+        <form class="form" action="">
+            <label class="form-label" for="email">Your email</label>
+            <br>
+            <input type="email" class="form-input" id="email">
+            <br>
+            <label class="form-label" for="password">Password</label>
+            <br>
+            <input type="password" class="form-input" id="password">
+        </form>
+        <button class="button" type="button">
+            Sign in
+        </button>
+        <div class="help-text">
+            Don't have an account yet ?<a class="link-sign-up" href="./sign-up.html" target="_blank">Sign up</a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
