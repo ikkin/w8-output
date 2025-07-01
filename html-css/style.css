@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202938;
+}
+
+/*
+layout-grid
+*/
+.grid {
+    margin: 0;
+    border: 0;
+    padding: 0 0 10px 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.grid-title {
+    color: #FFF;
+}
+
+.grid.last-row {
+    padding: 0;
+}
+
+.grid-area {
+    margin: 0;
+    border: 10px solid #000;
+    padding: 0;
+    background: repeating-linear-gradient(135deg, #dda0dd 0px, #dda0dd 3px, #330080 3px, #330080 10px);
+}
+
+.grid-item {
+    height: 50px;
+    margin: 0 0 0 10px;
+    border: 0;
+    padding: 0;
+    text-align: center;
+    align-content: center;
+    background-color: #DA46EF;
+    color: #FFF;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid-item.first-col {
+    margin: 0;
+}
+
+.grid-col-2 > .grid-item {
+    width: 50%;
+}
+
+.grid-col-4 > .grid-item {
+    width: 25%;
+}
+
+.grid-col-6 > .grid-item {
+    width: 16.6%;
+}
+
+/*
+layout-form
+*/
+#layout-form {
+    background-color: #202938;
+    margin-top: 40px;
+}
+
+.form-title {
+    color: #FFF;
+    margin: 0;
+    padding: 30px
+}
+
+.form > .form-label {
+    color: #FFF;
+    text-align: left;
+    padding: 10px 30px 5px 30px;
+    display: inline-block;
+    font-size: 13pt;
+}
+
+.form > .form-input {
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #384152;
+    color: #99A0B2;
+    border-color: #4C5564;
+    height: 40px;
+    margin: 5px 30px 10px 30px;
+    width: 400px;
+    font-size: 13pt;
+    padding-left: 0.5em;
+}
+
+.button {
+    width: 400px;
+    margin: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    background-color: #2463EC;
+    border: none;
+    color: #fff;
+    font-size: 13pt;
+    text-align: center;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.help-text {
+    font-size: 13pt;
+    color: #98A1B0;
+    margin: 0 30px;
+    padding-bottom: 50px;
+}
+
+.help-text > .link-sign-up {
+    text-decoration: none;
+    color: #2463EC;
+    margin-left: 10px;
+}
